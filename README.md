@@ -3,3 +3,9 @@
 ## Nadpis druhej úrovne
 
 [I'm an inline-style link](https://www.google.com)
+
+```
+git status 
+git add
+git commit
+```
