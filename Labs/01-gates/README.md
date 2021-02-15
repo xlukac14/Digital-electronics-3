@@ -3,4 +3,4 @@
 ## 1. Repository link 
 Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarcak/Digital-electronics-1)
 
-## 2. De Moran's Law
+## 2. De Morgan's Law
