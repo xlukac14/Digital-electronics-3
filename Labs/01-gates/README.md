@@ -96,7 +96,7 @@ begin
 end architecture dataflow;
 ```
 
-### Distribution Laws simulation
+### Distribution Laws Simulation
 ![](Images/Screenshot_1.2.png)
 
 
