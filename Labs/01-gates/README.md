@@ -10,7 +10,7 @@ Link to EDA playground: [De Morgan's Law](https://www.edaplayground.com/x/8Pat)
 ![](Images/Equations.png)
 
 ### VHDL
-```bash
+```vhdl
 library ieee;               -- Standard library
 use ieee.std_logic_1164.all;-- Package for data types and logic operations
 
