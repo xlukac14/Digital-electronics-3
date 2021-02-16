@@ -22,5 +22,12 @@ Link to EDA playground: [De Morgan's Law](https://www.edaplayground.com/x/8Pat)
 | 1 | 1 | 0 | 0 |
 | 1 | 1 | 1 | 0 |
 
+### De Morgan's Law Simulation
+![](Images/Screenshot_1.1.png)
+
+
+## 2. Distribution Laws
+
+
 
 
