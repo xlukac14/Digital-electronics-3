@@ -6,10 +6,11 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
 ## 2. De Morgan's Law
 Link to EDA playground: [De Morgan's Law](https://www.edaplayground.com/x/8Pat)
 
-###Equations
+### Equations
 ![](Images/Equations.png)
 
-###Table
+
+### Table
 | **c** | **b** |**a** | **f(c,b,a)** |
 | :-: | :-: | :-: | :-: |
 | 0 | 0 | 0 | 1 |
