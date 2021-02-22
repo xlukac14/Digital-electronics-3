@@ -187,7 +187,7 @@ begin
 end architecture testbench;
 ```
 
-### Reported Error
+### Simulator Console Output
 ![](Images/Screenshot_2.1.png)
 
 ### Link to EDA playground
