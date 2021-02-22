@@ -1,5 +1,7 @@
 # Lab assignment 02- Combinational Logic
 
+Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarcak/Digital-electronics-1)
+
 ## 1. Preparation tasks
 
 ### Completed 2-bit Comparator Truth Table
