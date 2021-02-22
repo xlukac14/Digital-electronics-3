@@ -186,7 +186,7 @@ end architecture testbench;
 ```
 
 ### Reported Error
-![](Images/Screensot_2.1.png)
+![](Images/Screenshot_2.1.png)
 
 ### Link to EDA playground
 
