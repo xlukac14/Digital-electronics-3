@@ -88,18 +88,23 @@ end architecture Behavioral;
 1. Open Vivado 2020.2
 
 2. Create a project 
+
 ![](Images/screen_1.png)
 
 3. Create a new project -> Next
+
 ![](Images/screen_1.1.png)
 
 4. Fulfill project name and project location -> Next
+
 ![](Images/screen_1.2.png)
 
 5. Check RTL Project -> Next
+
 ![](Images/screen_1.3.png)
 
 6. In Add Sources click on "Create file"
+
 ![](Images/screen_1.4.png)
 
 7. Create source file, fulfill File type (VHDL) and project name -> OK
@@ -107,41 +112,53 @@ end architecture Behavioral;
 ![](Images/screen_1.5.png) 
 
 8. Target language and Simulator laguage (VHDL) -> Next
+
 ![](Images/screen_1.6.png)
 
 9. Add Constraints is optional -> Next
+
 ![](Images/screen_1.7.png)
 
 10. In default part we click on boards and pick Nexys A7-50T -> Next
+
 ![](Images/screen_1.8.png)
 
 11. We can see our New Project summary -> Finish
+
 ![](Images/screen_1.9.png)
 
 12. Define module -> OK
+
 ![](Images/screen_1.10.png)
 
 13. In Design Sources we can see our design "comparator_2bit.vhd" 
+
 ![](Images/screen_1.11.png)
 
 ### Creation of Simulation Sources 
 
 1. File -> Add Sources
+
 ![](Images/screen_1.12.png)
 
 2. Check Simulation sources -> Next
+
 ![](Images/screen_1.13.png)
 
 3. Create File -> Fulfill File Type (VHDL) and File Name
+
 ![](Images/screen_1.14.png)
 
 4. Finish
+
 ![](Images/screen_1.15.png)
 
 5. Define Module -> OK
+
 ![](Images/screen_1.16.png)
 
 6. We can see our file in Simulation Sources -> Open 
+
 ![](Images/screen_1.17.png)
 
 ![](Images/screen_1.18.png)
@@ -149,12 +166,15 @@ end architecture Behavioral;
 ### Simulation
 
 1. Click on Flow -> Run Simulation -> Run Behavioral Simulation
+
 ![](Images/screen_1.19.png)
 
 2. Wait 
+
 ![](Images/screen_1.20.png)
 
 3. Example of simulation 
+
 ![](Images/screen_1.21.png)
 
 
