@@ -107,11 +107,11 @@ end architecture Behavioral;
 
 ![](Images/screen_1.4.png)
 
-7. Create source file, fulfill File type (VHDL) and project name -> OK
+7. Create source file, fulfill File type (VHDL) and File name -> OK
 
 ![](Images/screen_1.5.png) 
 
-8. Target language and Simulator laguage (VHDL) -> Next
+8. Target language and Simulator language (VHDL) -> Next
 
 ![](Images/screen_1.6.png)
 
