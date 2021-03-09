@@ -3,4 +3,6 @@
 Nov 18 2020
 09:47:47
 D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sim_1/new/tb_hex_7seg.vhd,1615309123,vhdl,,,,tb_hex_7seg,,,,,,,,
-D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sources_1/new/hex_7seg.vhd,1615308436,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sim_1/new/tb_hex_7seg.vhd,,,hex_7seg,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sim_1/new/tb_top.vhd,1615314705,vhdl,,,,tb_top,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sources_1/new/hex_7seg.vhd,1615310485,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sources_1/new/top.vhd,,,hex_7seg,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sources_1/new/top.vhd,1615315525,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/04-segment/display/display/display.srcs/sim_1/new/tb_top.vhd,,,top,,,,,,,,
