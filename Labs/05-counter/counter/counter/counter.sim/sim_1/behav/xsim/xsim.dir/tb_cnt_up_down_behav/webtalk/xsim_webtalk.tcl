@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir D:/Git/Tomas/Digital-electronics-1/Labs/05-counter/counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Mon Mar 15 22:06:10 2021" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Mon Mar 15 22:41:24 2021" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2020.2 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "3064766" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "6d8fb1991fc54ac7b0f20558edb819ec" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "8" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "10" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i7-8550U CPU @ 1.80GHz" -context "user_environment"
@@ -24,9 +24,9 @@ webtalk_add_data -client project -key system_ram -value "16.000 GB" -context "us
 webtalk_register_client -client xsim
 webtalk_add_data -client xsim -key Command -value "xsim" -context "xsim\\command_line_options"
 webtalk_add_data -client xsim -key trace_waveform -value "true" -context "xsim\\usage"
-webtalk_add_data -client xsim -key runtime -value "800 ns" -context "xsim\\usage"
-webtalk_add_data -client xsim -key iteration -value "0" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Time -value "0.00_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Simulation_Memory -value "6360_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 1785092861 -regid "" -xml D:/Git/Tomas/Digital-electronics-1/Labs/05-counter/counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/Git/Tomas/Digital-electronics-1/Labs/05-counter/counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/Git/Tomas/Digital-electronics-1/Labs/05-counter/counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key runtime -value "750 ns" -context "xsim\\usage"
+webtalk_add_data -client xsim -key iteration -value "1" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Time -value "0.01_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Simulation_Memory -value "6380_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 1376809025 -regid "" -xml D:/Git/Tomas/Digital-electronics-1/Labs/05-counter/counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/usage_statistics_ext_xsim.xml -html D:/Git/Tomas/Digital-electronics-1/Labs/05-counter/counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/usage_statistics_ext_xsim.html -wdm D:/Git/Tomas/Digital-electronics-1/Labs/05-counter/counter/counter/counter.sim/sim_1/behav/xsim/xsim.dir/tb_cnt_up_down_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
