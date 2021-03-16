@@ -177,3 +177,7 @@ begin
 end architecture Behavioral;
 ```
 
+### 4-bit Bidirectional Counter and 16-bit Counter
+
+![](Images/counter.png)
+
