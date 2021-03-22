@@ -136,6 +136,10 @@ begin
 end architecture testbench;
 ```
 
+### Screenshot with simulated time waveforms
+
+![](Images/waveforms.png)
+
 ### Listing of VHDL architecture of the top layer
 
 ```vhdl
@@ -191,3 +195,7 @@ driver_seg_4 : entity work.driver_7seg_4digits
 end architecture Behavioral;
 ```
 
+## 3. Eight-digit driver
+
+![](Images/driver_schematic.png)
+ 
