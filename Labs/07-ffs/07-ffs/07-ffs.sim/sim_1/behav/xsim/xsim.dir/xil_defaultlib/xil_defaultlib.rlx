@@ -2,5 +2,13 @@
 2020.2
 Nov 18 2020
 09:47:47
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_d_ff_arst.vhd,1617101753,vhdl,,,,tb_d_ff_arst,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_d_ff_rst.vhd,1617102657,vhdl,,,,tb_d_ff_rst,,,,,,,,
 D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_d_latch.vhd,1617098189,vhdl,,,,tb_d_latch,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_jk_ff_rst.vhd,1617103382,vhdl,,,,tb_jk_ff_rst,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_t_ff_rst.vhd,1617104430,vhdl,,,,tb_t_ff_rst,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sources_1/new/d_ff_arst.vhd,1617100516,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_d_ff_arst.vhd,,,d_ff_arst,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sources_1/new/d_ff_rst.vhd,1617102277,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_d_ff_rst.vhd,,,d_ff_rst,,,,,,,,
 D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sources_1/new/d_latch.vhd,1617052302,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_d_latch.vhd,,,d_latch,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sources_1/new/jk_ff_rst.vhd,1617103272,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_jk_ff_rst.vhd,,,jk_ff_rst,,,,,,,,
+D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sources_1/new/t_ff_rst.vhd,1617104727,vhdl,D:/Git/Tomas/Digital-electronics-1/Labs/07-ffs/07-ffs/07-ffs.srcs/sim_1/new/tb_t_ff_rst.vhd,,,t_ff_rst,,,,,,,,
