@@ -232,14 +232,14 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
   begin
       if rising_edge(clk) then
           if (rst = '1') then
-              s_q <=  '0';
+              s_q     <=  '0';
               s_q_bar <=  '1';
           else
               if (t = '0') then
-                  s_q <=   s_q;
+                  s_q     <=   s_q;
                   s_q_bar <=   s_q_bar;
               else
-                  s_q  <=  not s_q;
+                  s_q     <=  not s_q;
                   s_q_bar <=  not s_q_bar;
               end if;    
           end if;
@@ -394,14 +394,14 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
      wait for 10 ns;
      
      assert(s_q = '0' and s_q_bar = '1')
-     report "Error - Failed" severity error;
+     report "Error" severity error;
      
      wait for 20 ns;
      s_d  <= '1';
      wait for 15 ns;
      
      assert(s_q = '1' and s_q_bar = '0')
-     report "Error - Failed" severity error;
+     report "Error" severity error;
      --/d sekv
      
      --d sekv
