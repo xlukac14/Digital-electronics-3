@@ -12,6 +12,7 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
 
 ![](Images/eq_T.png)
 
+### Table for D_FF
 
 | **clk** | **d** | **q(n)** | **q(n+1)** | **Comments** |
 | :-: | :-: | :-: | :-: | :-- |
@@ -19,6 +20,8 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
 | ![rising](Images/eq_uparrow.png) | 0 | 1 | 0 | Store |
 | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | Store |
 | ![rising](Images/eq_uparrow.png) | 1 | 1 | 1 | No change |
+
+### Table for JK_FF
 
 | **clk** | **j** | **k** | **q(n)** | **q(n+1)** | **Comments** |
 | :-: | :-: | :-: | :-: | :-: | :-- |
@@ -30,6 +33,8 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
 | ![rising](Images/eq_uparrow.png) | 1 | 0 | 1 | 1 | Set |
 | ![rising](Images/eq_uparrow.png) | 1 | 1 | 0 | 1 | Toggle |
 | ![rising](Images/eq_uparrow.png) | 1 | 1 | 1 | 0 | Toggle |
+
+### Table for T_FF
 
 | **clk** | **t** | **q(n)** | **q(n+1)** | **Comments** |
 | :-: | :-: | :-: | :-: | :-- |
