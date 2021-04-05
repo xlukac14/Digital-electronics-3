@@ -1,36 +1,96 @@
-# Lab assignment 08- Traffic light controller
-
-Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarcak/Digital-electronics-1)
-
-## 1. Preparation tasks
-
-### State table  
-
-| **Input P** | `0` | `0` | `1` | `1` | `0` | `1` | `0` | `1` | `1` | `1` | `1` | `0` | `0` | `1` | `1` | `1` |
-| :-- | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: | :-: |
-| **Clock** | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) | ![](Images/eq_uparrow.png) |
-| **State** | A | A | B | C | C | D | A | B | C | D | B | B | B | C | D | B |
-| **Output R** | `0` | `0` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `1` | `0` | `0` | `0` | `0` | `1` | `0` |
-
-### Figure with connection of RGB LEDs on Nexys A7 board
-
-![](Images/figure_board.png)
-
-### Table with color settings
-
-| **RGB LED** | **Artix-7 pin names** | **Red** | **Yellow** | **Green** |
-| :-: | :-: | :-: | :-: | :-: |
-| LD16 | N15, M16, R12 | `1,0,0` | `1,1,0` | `0,1,0` |
-| LD17 | N16, R11, G14 | `1,0,0` | `1,1,0` | `0,1,0` |
-
-## 2. Traffic light controller
-
-### State diagram
+----------------------------------------------------------------------------------
+-- Company: 
+-- Engineer: 
+-- 
+-- Create Date: 05.04.2021 22:14:47
+-- Design Name: 
+-- Module Name: tlc - Behavioral
+-- Project Name: 
+-- Target Devices: 
+-- Tool Versions: 
+-- Description: 
+-- 
+-- Dependencies: 
+-- 
+-- Revision:
+-- Revision 0.01 - File Created
+-- Additional Comments:
+-- 
+----------------------------------------------------------------------------------
 
 
-### Listing of VHDL code of sequential process (`p_traffic_fsm`)
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
 
-```vhdl
+------------------------------------------------------------------------
+-- Entity declaration for traffic light controller
+------------------------------------------------------------------------
+entity tlc is
+    port(
+        clk     : in  std_logic;
+        reset   : in  std_logic;
+        -- Traffic lights (RGB LEDs) for two directions
+        south_o : out std_logic_vector(3 - 1 downto 0);
+        west_o  : out std_logic_vector(3 - 1 downto 0)
+    );
+end entity tlc;
+
+------------------------------------------------------------------------
+-- Architecture declaration for traffic light controller
+------------------------------------------------------------------------
+architecture Behavioral of tlc is
+
+    -- Define the states
+    type t_state is (STOP1,
+                     WEST_GO,
+                     WEST_WAIT,
+                     STOP2,
+                     SOUTH_GO,
+                     SOUTH_WAIT);
+    -- Define the signal that uses different states
+    signal s_state  : t_state;
+
+    -- Internal clock enable
+    signal s_en     : std_logic;
+    -- Local delay counter
+    signal   s_cnt  : unsigned(5 - 1 downto 0);
+
+    -- Specific values for local counter
+    constant c_DELAY_4SEC : unsigned(5 - 1 downto 0) := b"1_0000";
+    constant c_DELAY_2SEC : unsigned(5 - 1 downto 0) := b"0_1000";
+    constant c_DELAY_1SEC : unsigned(5 - 1 downto 0) := b"0_0100";
+    constant c_ZERO       : unsigned(5 - 1 downto 0) := b"0_0000";
+
+    -- Output values
+    constant c_RED        : std_logic_vector(3 - 1 downto 0) := b"100";
+    constant c_YELLOW     : std_logic_vector(3 - 1 downto 0) := b"110";
+    constant c_GREEN      : std_logic_vector(3 - 1 downto 0) := b"010";
+
+begin
+
+    --------------------------------------------------------------------
+    -- Instance (copy) of clock_enable entity generates an enable pulse
+    -- every 250 ms (4 Hz). Remember that the frequency of the clock 
+    -- signal is 100 MHz.
+    
+    -- JUST FOR SHORTER/FASTER SIMULATION
+    s_en <= '1';
+--    clk_en0 : entity work.clock_enable
+--        generic map(
+--            g_MAX =>        -- g_MAX = 250 ms / (1/100 MHz)
+--        )
+--        port map(
+--            clk   => clk,
+--            reset => reset,
+--            ce_o  => s_en
+--        );
+
+    --------------------------------------------------------------------
+    -- p_traffic_fsm:
+    -- The sequential process with synchronous reset and clock_enable 
+    -- entirely controls the s_state signal by CASE statement.
+    --------------------------------------------------------------------
     p_traffic_fsm : process(clk)
     begin
         if rising_edge(clk) then
@@ -106,12 +166,14 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
                 end case;
             end if; -- Synchronous reset
         end if; -- Rising edge
-    end process p_traffic_fsm;
-```
+    end process p_traffic_fsm; 
 
-### Listing of VHDL code of combinatorial process (`p_output_fsm`)
-
-```vhdl
+    --------------------------------------------------------------------
+    -- p_output_fsm:
+    -- The combinatorial process is sensitive to state changes, and sets
+    -- the output signals accordingly. This is an example of a Moore 
+    -- state machine because the output is set based on the active state.
+    --------------------------------------------------------------------
     p_output_fsm : process(s_state)
     begin
         case s_state is
@@ -144,8 +206,5 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
                 west_o  <= "100";   -- Red
         end case;
     end process p_output_fsm;
-```
 
-### Screenshot with simulated time waveforms
-
-![](Images/waveforms_tlc.png)
+end architecture Behavioral;
