@@ -47,6 +47,7 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
 
                     -- If the current state is STOP1, then wait 1 sec
                     -- and move to the next GO_WAIT state.
+
                     when STOP1 =>
                         -- Count up to c_DELAY_1SEC
                         if (s_cnt < c_DELAY_1SEC) then
@@ -73,7 +74,8 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
                         else
                             s_state <= STOP2;
                             s_cnt <= c_ZERO;
-                        end if;     
+                        end if;  
+   
                     when STOP2 =>
                         if (s_cnt <= c_DELAY_1SEC) then 
                             s_cnt <= s_cnt + 1;
@@ -141,8 +143,8 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
                 west_o  <= "100";   -- Red (RGB = 100)
             
             when others =>
-                south_o <= "100";   -- Red
-                west_o  <= "100";   -- Red
+                south_o <= "100";   -- Red (RGB = 100)
+                west_o  <= "100";   -- Red (RGB = 100)
         end case;
     end process p_output_fsm;
 ```
@@ -167,7 +169,7 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
 
 ### State diagram
 
-![](Images/state_diagra,_2.png)
+![](Images/state_diagram_2.png)
 
 ### Listing of VHDL code of sequential process (`p_smart_traffic_fsm`)
 
