@@ -153,6 +153,8 @@ Link to my repository: [tmarcak/Digital-electronics-1](https://github.com/tmarca
 
 ![](Images/waveforms_tlc.png)
 
+![](Images/waveforms_tlc_2.png)
+
 ## 3. Smart controller
 
 ### State table
