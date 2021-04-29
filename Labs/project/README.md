@@ -75,7 +75,7 @@ Correct possition for parking in city is middle yellow segment, because you must
 
 ## Top module diagram
 
-![](Images/top_parking_assistant_diagram_final.png).
+![](Images/top_parking_assistant_diagram_final.jpg)
 
 
 ## Video
