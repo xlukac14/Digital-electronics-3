@@ -10,7 +10,7 @@ Link to our GitHub project folder: [Project folder](https://github.com/tmarcak/D
 
 ## Hardware description
 
-### Arty A7
+#### Arty A7
 
 The Arty A7, formerly known as the Arty, is a ready-to-use development platform designed around the Artix-7™ Field Programmable Gate Array (FPGA) from Xilinx.
 It was designed specifically for use as a MicroBlaze Soft Processing System. When used in this context, the Arty A7 becomes the most flexible processing platform you could hope to add to your collection, capable of adapting to whatever your project requires. 
@@ -22,7 +22,7 @@ The Arty A7 is fully compatible with the high-performance Vivado ® Design Suite
 
 ![](Images/arty_pins.png)
 
-### HC-SR04 ultrasonic sensor
+#### HC-SR04 ultrasonic sensor
 
 The HC-SR04 ultrasonic sensor uses sonar to determine distance to an object like bats do. 
 It offers excellent non-contact range detection with high accuracy and stable readings in an easy-to-use package. 
@@ -30,7 +30,7 @@ It comes complete with ultrasonic transmitter and receiver modules. This sensor 
 
 ![](Images/sensor.png)
 
-### Board
+#### Board
 
 Our designed board in Eagle software. 
 
@@ -42,7 +42,7 @@ Our designed board in Eagle software.
 
 ![](Images/plosak_4.png)
 
-### Buzzer
+#### Buzzer
 For sound signalization with PWM we chose simple Piezo Buzzer. 
 Piezo buzzers are simple devices that can generate basic beeps and tones.  
 They work by using a piezo crystal. It is a special material that changes shape when voltage is applied to it.  
@@ -51,29 +51,29 @@ Simple change the frequency of the voltage sent to the piezo and it will start g
 
 ![](Images/buzzer.png)
 
-### LED bargraph
+#### LED bargraph
 As visual signalization we chose 10 segment LED bargraph, where are 5 green segment which signalizated there is lots of free space (3m - 1,6m), 3 yellow segment which signalizated correct possition for parking (1,6m - 1m) and 2 red segments which signalizated there is not enought space and you have to stop or you can crash your car. 
 Correct possition for parking in city is middle yellow segment, because you must keep a distance of at least 1.2m between the vehicles for safe leave, but when you park in home garage, you can park closser to safe space.
 
 ![](Images/led_bar.png)
 
-### Pin cables
+#### Pin cables
 
 ![](Images/pin_cables.jpg)
 
 ## VHDL modules description and simulations
 
-### HC-SR04 Ultrasonic sensor
-### Sensor_control_unit
-### Sensor_logic_unit
-### Buzzer
-### Buzzer_control_unit
-### LED bar
-### LED_bar_control_unit
+#### HC-SR04 Ultrasonic sensor
+#### Sensor_control_unit
+#### Sensor_logic_unit
+#### Buzzer
+#### Buzzer_control_unit
+#### LED bar
+#### LED_bar_control_unit
 
 ## TOP module description and simulations
 
-# Top module diagram
+## Top module diagram
 
 ![](Images/top_parking_assistant_diagram_final.png).
 
