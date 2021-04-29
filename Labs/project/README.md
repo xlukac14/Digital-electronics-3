@@ -8,7 +8,7 @@ Link to our GitHub project folder: [Project folder](https://github.com/tmarcak/D
 ### Project objectives
 
 
-## Hardware description
+# Hardware description
 
 #### Arty A7
 
@@ -71,7 +71,7 @@ Correct possition for parking in city is middle yellow segment, because you must
 #### LED bar
 #### LED_bar_control_unit
 
-## TOP module description and simulations
+# TOP module description and simulations
 
 ## Top module diagram
 
